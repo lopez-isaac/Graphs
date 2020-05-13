@@ -109,10 +109,10 @@ class Graph:
         starting_vertex to destination_vertex in
         breath-first order.
         """
-        path = []
+
         queue = Queue()
         # enqueue the first PATH
-        path = queue.enqueue([starting_vertex])
+        queue.enqueue([starting_vertex])
 
         # keep track of the visted nodes
         visited = set()
@@ -149,10 +149,10 @@ class Graph:
         starting_vertex to destination_vertex in
         depth-first order.
         """
-        path = []
+        #path = []
         stack = Stack()
         # enqueue the first PATH
-        path = stack.push([starting_vertex])
+        stack.push([starting_vertex])
 
         # keep track of the visted nodes
         visited = set()
